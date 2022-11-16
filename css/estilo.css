@@ -1,0 +1,151 @@
+/*Estilo de todo el cuerpo*/
+body{
+  margin: 0;
+  background-color: rgb(41, 81, 116);
+}
+
+/*Estilo del encabezado*/
+#encabezado{
+  background-image: url("Banner.png");
+  position: relative;
+  padding-top: 5%;
+  left: 2%;
+  width: 96%;
+}
+
+/*Estilo letras del titulo*/
+.titu{
+  -webkit-text-stroke: 1px rgb(32, 31, 31);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Estilo títulos h1*/
+h1{
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/*Estilo títulos h2*/
+h2{
+  text-align: center;
+  color: #000;
+}
+
+/*Estilo listas del menú*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+  color: blue;
+}
+
+/*Estilo del contenedor principal*/
+.cont{  
+  position: relative;
+  background-color: rgb(73, 68, 146);
+  padding-bottom: 2%;
+  left: 2%;
+  width: 96%;
+  padding-top: 1%;
+
+}
+
+/*Estilo caja general de cada sección*/
+.cajagen{
+  display: flex;
+}
+
+/*Estilo para las cajas de personajes*/
+.cajaper{
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Estilo pie de pagina*/
+footer{
+  background-image: url("Banner.png");
+  position: relative;
+  padding-top: 1%;
+}
+
+/*Estilo div formulario*/
+.fot {
+  position: relative;
+  width: 95%;
+  padding-bottom: 1%;
+  background-color: rgb(40, 141, 141);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Estilo tabla*/
+table{
+  padding-left: 1%;
+  padding: 1%;
+}
+
+.tabla{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Estilo td*/
+td{
+  padding: 3px;
+}
+
+/*Estilo de letras de la tabla*/
+.letra{
+  color: rgb(25, 0, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Estilo botones al pasar el cursor*/
+.boton:hover{
+  background-color: green;
+}
+
+/*Bloquear redimensión de textarea*/
+textarea{
+  resize: vertical;
+}
+
+/*Define el tamaño máximo de los controles del audio*/
+audio{
+  max-width: 100%;
+}
+
+/*Define el estilo del div audio*/
+.audio{
+  position: relative;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Cuando la ventana sea menor a 700px, el contenido del div fot pasará a modo columna*/
+@media (max-width: 700px){
+  .fot{
+    flex-direction: column;
+  }
+}
